@@ -67,7 +67,7 @@ class Usuario{
         $contenido = file_get_contents("../data/usuarios.json");
         $usuarios = json_decode($contenido,true);
         $usuarios[] = array(
-            "usuario" => $this->nombre,
+            "nombre" => $this->nombre,
             "apellido" => $this->apellido,
             "fechaNacimiento" => $this->fechaNacimiento,
             "genero" => $this->genero

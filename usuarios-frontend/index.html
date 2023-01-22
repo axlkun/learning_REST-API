@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <div class="centrar">
+        <label for="">Nombre</label><br>
+        <input type="text" id="nombre"><br><br>
+
+        <label for="">Apellido</label><br>
+        <input type="text" id="apellido"><br><br>
+
+        <label for="">Fecha de nacimiento</label><br>
+        <input type="date" id="fechaNacimiento"><br><br>
+
+        <label for="">Genero</label><br>
+        <div class="radio">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="Maculino">
+            <label for="masculino">Femenino</label>
+            <input type="radio" id="femenino" name="genero" value="Femenino"><br><br>
+        </div>
+        
+        <div class="contenedorBotones">
+            <button id="btn-guardar" type="button" onclick="guardar()">Guardar</button>
+            <button type="button" onclick="limpiar()">Limpiar</button><br>
+            <button id="btn-actualizar" type="button" onclick="actualizar()" style="display: none;">Actualizar</button><br>
+        </div>
+        
+    </div>
+
+    <table id="tablaUsuarios">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Fecha de nacimiento</th>
+                <th>Genero</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+    </table>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script src="js/controlador.js"></script>
+
+</html>

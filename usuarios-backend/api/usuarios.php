@@ -5,6 +5,7 @@
 //echo 'Informacion: ' . file_get_contents('php://input');
 header("Content-Type: application/json");
 include_once('../classes/Usuario.php');
+
 switch($_SERVER['REQUEST_METHOD']){
 
     case 'POST':
